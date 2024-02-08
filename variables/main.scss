@@ -1,0 +1,29 @@
+@use "./variables/main-colors" as *;
+
+$padding_inline: 0.5em;
+box {
+    $padding_inline: 1rem;
+    padding: $padding_inline;
+}
+#global {
+    $margin-inline: 1.3rem;
+    margin-inline: $margin-inline;
+}
+// test global variable
+h1 {
+    $padd: 10px !global;
+    padding: $padding_inline;
+    padding-inline: $padd;
+}
+h2 {
+    padding: $padd;
+}
+
+// example code
+// .header {
+//     // background-color: main-colors.$bg_color;
+// }
+// example code
+.boxes {
+    background-color: $bg_color;
+}
