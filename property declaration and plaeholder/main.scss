@@ -16,7 +16,7 @@
 }
 
 // extend styles
-.style_content {
+%style_content {
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -24,5 +24,14 @@
 }
 
 .home {
-    
+    @extend %style_content;
+    background-color: red;
+    color: #666;
+}
+
+footer {
+    @extend %style_content;
+    background-color: red;
+    color: #666;
+    font-size: 22px;
 }

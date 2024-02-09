@@ -7,10 +7,21 @@
   text-transform: uppercase;
 }
 
-.style_content {
+footer, .home {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-left: auto;
+}
+
+.home {
+  background-color: red;
+  color: #666;
+}
+
+footer {
+  background-color: red;
+  color: #666;
+  font-size: 22px;
 }
 /*# sourceMappingURL=main.css.map */
