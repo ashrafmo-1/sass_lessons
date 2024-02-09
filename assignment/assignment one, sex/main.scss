@@ -85,4 +85,41 @@
 }
 
 // sex
-// 
+
+// The Code
+%widget {
+    background-color: white;
+    padding: 20px;
+}
+%main-border {
+    @extend %widget;
+    border: 1px solid #CCC
+}
+.my-class {
+    @extend %main-border;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+// seven
+.box {
+    h2,  p  {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 575px) {
+    .box {
+        h2,  p  {
+            font-size: 26px;
+        }
+    }
+    .box {
+        h2, p{
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    
+}
