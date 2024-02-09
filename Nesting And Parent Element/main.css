@@ -1,0 +1,73 @@
+.boxes .box {
+  background-color: #eee;
+  border-radius: 10px;
+}
+.boxes .box .title {
+  font-size: 22px;
+}
+.boxes .box .description {
+  font-size: 17px;
+}
+
+.aboutUS,
+.contactMy {
+  background: #000;
+}
+.aboutUS .main_title,
+.contactMy .main_title {
+  font-size: 22px;
+}
+
+.parent > .child {
+  font-weight: bold;
+}
+.parent > .chick {
+  font-size: 16px;
+}
+
+.parent > child {
+  font-style: italic;
+}
+.parent .test {
+  background-color: #eee;
+}
+.parent + p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.father > .parent_one {
+  font-size: 10px;
+}
+.father > .parent_two {
+  font-size: 1px;
+}
+.father .not {
+  font-size: 22px;
+}
+
+.box {
+  background-color: #eee;
+  border-radius: 10px;
+}
+.box .title {
+  font-size: 22px;
+}
+.box .description {
+  font-size: 17px;
+}
+.box.red {
+  outline-color: red;
+}
+.box.green {
+  outline-color: green;
+}
+.box:hover {
+  color: red;
+}
+.box::after {
+  content: "";
+  position: absolute;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+.box {
+    margin: {
+        top: 20px;
+        bottom: 15px;
+    }
+    padding: {
+        top: 10px;
+        right: 30px;
+    }
+    font: {
+        size: 22px;
+    }
+    text: {
+        transform: uppercase;
+    }
+}
+
+// extend styles
+.style_content {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.home {
+    
+}
