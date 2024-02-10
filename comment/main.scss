@@ -1,0 +1,12 @@
+// hello this comment is now show in css file
+/* show in css file not show if you use minefiy css file */
+/*! show in css file show on use minefiy css file !*/
+h2 {
+    font-size: 60px;
+    color: red;
+    padding: 10px; // end style
+}
+/// end comment
+
+$company_name: 'Google';
+/* company name #{$company_name} */
