@@ -1,5 +1,5 @@
-<h1>sass lessons</h1>
-<h2>learn with elzero web school</h3>
+<h1>Sass Lessons</h1>
+<h2>Learn With Elzero Web School</h3>
 
 - intro test compile.
 - variables.
