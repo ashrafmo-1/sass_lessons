@@ -1,8 +1,12 @@
 $company: 'ash-education';
 $position: "top";
 
-.ad-#{$company} {
+.ad-#{$company}-#{unique-id()} {
     color: red;
     background-image: url("./image/#{$company}");
     #{$position}: 10px;
+}
+
+##{unique-id()} {
+    font-size: 11px;
 }
