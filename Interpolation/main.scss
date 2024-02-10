@@ -1,0 +1,8 @@
+$company: 'ash-education';
+$position: "top";
+
+.ad-#{$company} {
+    color: red;
+    background-image: url("./image/#{$company}");
+    #{$position}: 10px;
+}
