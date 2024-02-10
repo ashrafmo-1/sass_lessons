@@ -1,0 +1,41 @@
+$theme_mood: 'white';
+
+body {
+    @if $theme_mood == 'dark'{
+        background-color: #444;
+        color: #eee;
+    } @else {
+        background-color: #eee;
+        color: #444;
+    }
+}
+
+// active click
+$is_active: true;
+.side_bar {
+    @if $is_active == true {
+        left: 0;
+        top: 0;
+        background-color: #e1e1e1;
+    } @else {
+        left: -200px;
+        top: 0;
+    }
+}
+
+
+
+.boxes {
+    display: flex;
+    align-self: center;
+    background-color: #e1e1e1;
+    color: #eee;
+    padding: 2px;
+    margin: 20px;
+}
+
+$rounded: false;
+.box {
+    @extend .boxes;
+    border-radius: if($rounded, 10px, null);
+}

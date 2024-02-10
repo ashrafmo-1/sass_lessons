@@ -141,4 +141,15 @@ $link-hover: $red;
     }
 }
 
-// nine
+// ten
+.box {
+    font-size: 20px;
+
+    &-holder{
+        width: 1000px;
+
+        &-content {
+            margin: auto;
+        }
+    }
+}

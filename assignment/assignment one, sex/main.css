@@ -85,4 +85,14 @@
 .box a:hover {
   color: #e91e63;
 }
+
+.box {
+  font-size: 20px;
+}
+.box-holder {
+  width: 1000px;
+}
+.box-holder-content {
+  margin: auto;
+}
 /*# sourceMappingURL=main.css.map */
