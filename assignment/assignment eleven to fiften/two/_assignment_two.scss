@@ -1,0 +1,6 @@
+// grid system
+@for $i from 1 through 16 {
+    .col-#{$i} {
+        width: 6.25% * $i;
+    }
+}
