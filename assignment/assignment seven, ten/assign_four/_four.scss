@@ -1,0 +1,7 @@
+$number: 10;
+$color: red;
+$theme: light;
+
+.class1 {
+    color: if($number > 5 and($color == red) not($theme dark), $color, null)
+}
