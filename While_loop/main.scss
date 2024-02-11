@@ -1,9 +1,8 @@
 $start: 1;
-
-// @while 1 <= 10 {
-//     .width-#{$start * 10} {
-//         width: $start * 10;
-//         height: ($start * 10) / 2 ;
-//     }
-//     $start: $start + 1;
-// }
+@while $start <= 10 {
+    .width-#{$start * 10} {
+        width: $start * 10px;
+        height: ($start * 10px) / 2 ;
+    }
+    $start: $start + 1;
+}
