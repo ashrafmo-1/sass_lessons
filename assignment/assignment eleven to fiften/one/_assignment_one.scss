@@ -1,0 +1,29 @@
+@mixin arrow($dimension){
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    border-bottom-color: red;
+    @if $dimension == "top" {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40px;
+    } @else if $dimension == "right" {
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+    } @else if $dimension == "bottom" {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -40px;
+    } @else if $dimension == "left" {
+        top: 50%;
+        transform: translateY(-50%);
+        left: -40px;
+    }
+}
+
+.element {
+    &:before {
+        @include arrow("top");
+    }
+}
