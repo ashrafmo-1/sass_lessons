@@ -1,0 +1,17 @@
+// لديك المتغير الخاص بالرقم
+// نريد إستعمال شرط داخل شرط
+// شاهد قيمة المتغير وال Output المطلوب بناء عليها
+
+// SASS Code
+$number: 1;
+
+.box  {
+    @if $number == 10 {
+        background-color: #EEE;
+        text-align: center;
+    } @else if $number == 9 {
+        background-color: #EEE;
+    } @else {
+        /* Nothing */
+    }
+}
