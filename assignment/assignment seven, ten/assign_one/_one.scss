@@ -1,0 +1,26 @@
+// لديك المتغيرات التالية
+// المطلوب كتابة SASS Code تستعمل فيه قيم المتغيرات جميعها لتخرج بال Output المطلوب
+// في حالة تغيرت قيمة متغير اللغة من en إلى ar تختلف القيم في ال Output كما في الأمثلة التالية
+// الهوامش الداخلية “Padding” للعنصر الإبن يتم حسابها عملية حسابية ولا تكتبها بيدك
+// يجب إستخدام المتغيرات لكتابة أسماء جميع ال Classes ولا تكتبها بيدك
+$main: "school";
+$child: "box";
+$language: "en"; // English
+$gap: 20px;
+
+.#{$main} {
+    padding: $gap;
+    @if $language == "en" {
+        direction: ltr;
+    } @else {
+        direction: rtl;
+    }
+    padding-left: $gap;
+
+    .#{$main}-#{$child} {
+        padding: 10px;
+    }
+    &:hover .#{$main}-#{$child} {
+        background-color: #eee;
+    }
+}
