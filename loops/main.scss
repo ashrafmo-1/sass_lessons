@@ -1,0 +1,37 @@
+// for loop
+
+/*! padding !*/
+@for $index from 1 through 6 {
+    .p-#{$index} {
+        padding: #{$index}rem;
+    }
+}
+/*! padding top !*/
+@for $index from 1 through 6 {
+    .pt-#{$index} {
+        padding-top: #{$index}rem;
+    }
+}
+/*! padding bottom !*/
+@for $index from 1 through 6 {
+    .pb-#{$index} {
+        padding-bottom: #{$index}rem;
+    }
+}
+/*! padding inline !*/
+@for $i from 1 through 6 {
+    .px-#{$i} {
+        padding-inline: #{$i}rem;;
+    }
+}
+
+
+$dinmensions: 0;
+@for $i from 1 through 8 {
+    .triangle-#{$dinmensions + 10} {
+        width: $dinmensions + 10;
+        height: $dinmensions + 10;
+        border: 1px solid red;
+    }
+    $dinmensions: $dinmensions + 10;
+}
