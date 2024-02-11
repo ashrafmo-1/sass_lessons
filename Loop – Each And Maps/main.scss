@@ -1,0 +1,42 @@
+$colors: red, green, blue, gold, yellow;
+
+@each $color in $colors {
+    .#{$color}-mood {
+        color: $color;
+        background-color: #eeeeee;
+        border: 1px solid $color;
+    }
+}
+
+$social: (
+    "facebook": blue,
+    "anydisk": indianred,
+    "slack": green,
+    "command": black
+);
+
+@each $name, $color in $social {
+    .#{$name}-brand {
+        background-color: $color;
+        color: #eeeeee;
+        &::after{
+            content: $name;
+            color: $color;
+        }
+    }
+}
+
+$classes:
+ "one" red 10px,
+ "two" green 20px,
+  "three" blue 30px,
+   "four" white 40px,;
+
+
+@each $name, $color, $size in $classes {
+    .box_#{$name} {
+        background-color: $color;
+        font-size: $size;
+        padding-inline:  $size / 2;
+    }
+}

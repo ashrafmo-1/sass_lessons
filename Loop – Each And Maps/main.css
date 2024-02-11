@@ -1,0 +1,90 @@
+.red-mood {
+  color: red;
+  background-color: #eeeeee;
+  border: 1px solid red;
+}
+
+.green-mood {
+  color: green;
+  background-color: #eeeeee;
+  border: 1px solid green;
+}
+
+.blue-mood {
+  color: blue;
+  background-color: #eeeeee;
+  border: 1px solid blue;
+}
+
+.gold-mood {
+  color: gold;
+  background-color: #eeeeee;
+  border: 1px solid gold;
+}
+
+.yellow-mood {
+  color: yellow;
+  background-color: #eeeeee;
+  border: 1px solid yellow;
+}
+
+.facebook-brand {
+  background-color: blue;
+  color: #eeeeee;
+}
+.facebook-brand::after {
+  content: "facebook";
+  color: blue;
+}
+
+.anydisk-brand {
+  background-color: indianred;
+  color: #eeeeee;
+}
+.anydisk-brand::after {
+  content: "anydisk";
+  color: indianred;
+}
+
+.slack-brand {
+  background-color: green;
+  color: #eeeeee;
+}
+.slack-brand::after {
+  content: "slack";
+  color: green;
+}
+
+.command-brand {
+  background-color: black;
+  color: #eeeeee;
+}
+.command-brand::after {
+  content: "command";
+  color: black;
+}
+
+.box_one {
+  background-color: red;
+  font-size: 10px;
+  padding-inline: 5px;
+}
+
+.box_two {
+  background-color: green;
+  font-size: 20px;
+  padding-inline: 10px;
+}
+
+.box_three {
+  background-color: blue;
+  font-size: 30px;
+  padding-inline: 15px;
+}
+
+.box_four {
+  background-color: white;
+  font-size: 40px;
+  padding-inline: 20px;
+}
+/*# sourceMappingURL=main.css.map */

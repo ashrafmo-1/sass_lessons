@@ -1,0 +1,45 @@
+// Mixin And Include
+
+@use "./layout/mixins/reset-page" as *;
+/// main colors
+@use "./layout/vars/colors_variables" as * ;
+
+body {
+    @include reset_all_page();
+    background-color: $e6;
+}
+
+@mixin list-style-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.box .nav {
+    @include list-style-reset;
+}
+
+
+@mixin border-radius($dimentions) {
+    border-radius: 50%;
+    height: $dimentions;
+    width: $dimentions;
+}
+
+.box {
+    @include border-radius(100px);
+    background-color: #e1e1e1;
+    color: #888888;
+}
+
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing_container {
+    @include flex_center;
+    @include border-radius(400px);
+    background-color: teal;
+}
