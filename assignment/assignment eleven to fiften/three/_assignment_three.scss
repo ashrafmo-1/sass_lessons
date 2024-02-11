@@ -1,0 +1,18 @@
+$names:
+  "books" 20px red 18,
+    "games" 30px green 18,
+      "dvds" 20px blue;
+
+// we use each function as this assignmrnt
+@each $name, $padding, $color, $size in $names {
+    .#{$name} {
+        padding: $padding;
+        @if $size == 18 {
+            font-size: #{$size}px;
+        } @else {
+            font-size: 16px;
+        }
+        border-bottom: 2px solid $color;
+        color: #444;
+    }
+}
