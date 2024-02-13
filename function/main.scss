@@ -1,0 +1,12 @@
+// Function
+@use "./layout/functions" as *;
+
+$width: 400px;
+.box {
+    width: $width;
+    height: half($width);
+}
+
+.new {
+    top: calculator(200px, 100px, 50px);
+}
