@@ -1,0 +1,22 @@
+@use "./layout/mixin" as *;
+
+@include devices(mobile) {
+    box {
+        font-size: 16px;
+    }
+}
+@include devices(small) {
+    box {
+        font-size: 18px;
+    }
+}
+@include devices(medium) {
+    box {
+        font-size: 20px;
+    }
+}
+@include devices(large) {
+    box {
+        font-size: 24px;
+    }
+}

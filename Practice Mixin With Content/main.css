@@ -1,0 +1,42 @@
+.alert {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+@keyframes alert {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes alert {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes uptodown {
+  from {
+    top: 20px;
+  }
+  to {
+    top: -20px;
+  }
+}
+@-webkit-keyframes uptodown {
+  from {
+    top: 20px;
+  }
+  to {
+    top: -20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

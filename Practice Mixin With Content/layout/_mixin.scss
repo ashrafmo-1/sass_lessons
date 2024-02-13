@@ -1,0 +1,17 @@
+@mixin overlay ($color, $opasity) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $opasity);
+}
+
+@mixin keyF ($amim-name) {
+    @keyframes #{$amim-name} {
+        @content;
+    }
+    @-webkit-keyframes #{$amim-name} {
+        @content;
+    }
+}
